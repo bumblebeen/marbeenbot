@@ -77,14 +77,14 @@ function processPostback(event) {
 
 // sends message to user
 function sendMessage(recipientId, message) {
-  console.log("Sending this message: " + message);
+  console.log("Sending this message: " + JSON.stringify(message));
   request({
     url: "https://graph.facebook.com/v2.6/me/messages",
     qs: {access_token: process.env.PAGE_ACCESS_TOKEN},
     method: "POST",
     json: {
       recipient: {id: recipientId},
-      message: message,
+      message: message
     }
   }, function(error, response, body) {
     if (error) {
