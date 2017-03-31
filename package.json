@@ -1,0 +1,18 @@
+{
+  "name": "marbeenbot",
+  "version": "1.0.0",
+  "description": "MarbeenBot Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Marvin Arcilla",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2",
+    "request": "^2.81.0"
+  }
+}
